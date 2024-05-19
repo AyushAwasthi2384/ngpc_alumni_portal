@@ -146,21 +146,21 @@ function splitTextAnimation() {
 }
 splitTextAnimation();
 
-var joinNowButton = document.querySelector("#cta section a ");
-joinNowButton.addEventListener("click", () => {
-  gsap.to("#googleform", {
-    scale: 1,
-    x: 0,
-  });
-});
-var formclose = document.querySelector("#googleform");
-formclose.addEventListener("click", () => {
-  gsap.to("#googleform", {
-    scale: 0,
-    left: "50%",
-    x: "-100%",
-  });
-});
+// var joinNowButton = document.querySelector("#cta section a ");
+// joinNowButton.addEventListener("click", () => {
+//   gsap.to("#googleform", {
+//     scale: 1,
+//     x: 0,
+//   });
+// });
+// var formclose = document.querySelector("#googleform");
+// formclose.addEventListener("click", () => {
+//   gsap.to("#googleform", {
+//     scale: 0,
+//     left: "50%",
+//     x: "-100%",
+//   });
+// });
 // navContent.addEventListener("mouseleave", () => {});
 var navBtn = document.querySelector(".nav-btn");
 
