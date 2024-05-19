@@ -157,6 +157,7 @@ var formclose = document.querySelector("#googleform");
 formclose.addEventListener("click", () => {
   gsap.to("#googleform", {
     scale: 0,
+    left: "50%",
     x: "-100%",
   });
 });
