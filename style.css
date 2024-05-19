@@ -141,7 +141,7 @@ body {
   height: 5em;
   padding: 30px 20px;
   backdrop-filter: blur(4px);
-  z-index: 9;
+  z-index: 900;
   position: fixed;
   width: 100vw;
   /* border: 2px solid black; */
