@@ -150,6 +150,10 @@ body {
 
 .nav-btn {
   display: none;
+  z-index: 28;
+}
+#nav-btn-icon{
+  z-index: 28;
 }
 
 #logo {
@@ -168,6 +172,7 @@ body {
   position: absolute;
   right: 5%;
   gap: 40px;
+  z-index: 25;
 
   /* background-color: #fff; */
 }
@@ -193,7 +198,7 @@ body {
   cursor: pointer;
   /* background-color: #296860; */
   align-content: center;
-  z-index: inherit;
+  z-index: 20;
 }
 
 #page2 {
@@ -1255,7 +1260,7 @@ body {
 
   #page3 {
     flex-direction: column-reverse;
-    margin-top: 10rem;
+    margin-top: 15rem;
     position: relative;
     height: auto;
 
@@ -1270,7 +1275,7 @@ body {
   }
 
   #page_events {
-    padding-top: 20rem;
+    padding-top: 10rem;
 
     .container {
       h2 {
@@ -1386,7 +1391,7 @@ body {
   }
 
   #page_events {
-    padding-top: 30rem;
+    padding-top: 20rem;
 
     .container {
       h2 {
