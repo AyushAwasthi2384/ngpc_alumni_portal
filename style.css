@@ -154,6 +154,7 @@ body {
 }
 #nav-btn-icon{
   z-index: 28;
+  position: absolute;
 }
 
 #logo {
