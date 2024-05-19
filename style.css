@@ -191,7 +191,7 @@ body {
   cursor: pointer;
   /* background-color: #296860; */
   align-content: center;
-  z-index: 20;
+  z-index: inherit;
 }
 
 #page2 {
@@ -356,7 +356,7 @@ body {
   background-image: url(DrDKSingh.jpg);
   background-size: cover;
   border-radius: 5px 25px 5px 25px;
-  z-index: 2;
+  /* z-index: 2; */
   /* box-shadow: 4px 1px 9px 2px #ebebeb; */
 }
 
@@ -614,7 +614,8 @@ body {
 }
 
 #googleform {
-  top: 0%;
+  /* bottom: 10rem; */
+  /* right: rem; */
   position: absolute;
   transform: translate(-50%, -50%);
   width: 60vw;
@@ -1315,15 +1316,19 @@ body {
 
   #navbar {
     justify-content: space-between;
-    z-index: 26;
+    align-items: center;
+    /* z-index: 26; */
 
     .nav-btn {
       display: block;
       color: white;
       font-size: 2rem;
-      padding: 0 .4rem;
+      padding-right: 2rem;
       border-radius: 1rem;
-      z-index: 27;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      /* z-index: 27; */
     }
 
     .nav-btn:active {
