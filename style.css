@@ -1318,7 +1318,7 @@ body {
       font-size: 2rem;
       padding: 0 .4rem;
       border-radius: 1rem;
-      z-index: 12;
+      z-index: 200;
     }
 
     .nav-btn:active {
