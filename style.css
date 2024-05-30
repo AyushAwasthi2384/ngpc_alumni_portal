@@ -14,107 +14,6 @@ body {
   background-color: #fffff0;
 }
 
-/* #navbar {
-  position: fixed;
-  top: 5%;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 50vw;
-  height: 8vh;
-  background-color: royalblue;
-  padding: 20px 40px;
-  border-radius: 50px;
-  z-index: 10;
-  color: white;
-} */
-
-/* #navbar h4 {
-  font-size: 1.4em;
-  font-weight: 600;
-  cursor: pointer;
-} */
-
-/* #logo img {
-  position: fixed;
-  top: 62vh;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  height: 28vw;
-  width: 28vw;
-  opacity: 0.1;
-  z-index: -1;
-} */
-
-/* #name {
-  position: absolute;
-  top: 25vh;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  z-index: 9;
-  /* background-color: red; */
-/* } 
-
-/* #name h1 {
-  text-align: center;
-  font-size: 4.5em;
-  font-weight: 500;
-  white-space: nowrap;
-} */
-
-/* #name h2 {
-  text-align: center;
-  font-size: 40px;
-  font-weight: 500;
-  white-space: nowrap;
-  overflow: hidden;
-} */
-
-/* @media screen and (max-width: 900px) {
-  #navbar {
-    width: 80%;
-  }
-  #navbar h4 {
-    font-size: 1.1em;
-    font-weight: 500;
-  }
-  #logo img {
-    height: 40vw;
-    width: 40vw;
-    top: 60vh;
-  }
-  #name h1 {
-    font-size: 3em;
-    font-weight: 500;
-  }
-}
-@media screen and (max-width: 500px) {
-  #navbar {
-    width: 100%;
-    justify-content: space-between;
-    border-radius: 0;
-    top: 0;
-  }
-  #navbar h4 {
-    font-size: 1em;
-    font-weight: 400;
-  }
-  #logo img {
-    height: 60vw;
-    width: 60vw;
-    top: 52vh;
-  }
-  #name h1 {
-    font-size: 2em;
-    font-weight: 500;
-  }
-  #name h2 {
-    font-size: 2em;
-    font-weight: 500;
-  }
-} */
 @font-face {
   font-family: kaftan;
   src: url(kaftan-trial.otf);
@@ -194,8 +93,35 @@ body {
   z-index: inherit;
 }
 
+#navbar-content-phone {
+  /* display: none; */
+  align-items: center;
+  position: fixed;
+  right: 5%;
+  gap: 40px;
+  z-index: 25;
+}
+
+#navbar-content-phone span a {
+  font-weight: 400;
+  color: white;
+  text-decoration: none;
+}
+
+#navbar-content-phone span {
+  overflow: hidden;
+  width: 5em;
+  height: 2em;
+  padding: 5px;
+  text-align: center;
+  cursor: pointer;
+  /* background-color: #296860; */
+  align-content: center;
+  z-index: inherit;
+}
+
 #page2 {
-  height: 100%;
+  height: 120%;
   width: 100%;
   display: flex;
   align-items: center;
@@ -779,6 +705,7 @@ body {
 
 #page_events {
   width: 100%;
+  height: 450%;
   /* border: 2px solid black; */
   display: flex;
   align-items: center;
@@ -1184,6 +1111,7 @@ body {
 
   #page_events {
     padding-top: 0rem;
+    /* height: 500%; */
 
     .container {
       h2 {
@@ -1237,8 +1165,17 @@ body {
     }
   }
 }
+@media screen and (min-width: 601px) {
+  #navbar-content-phone{
+    display: none;
+  }
+}
 
 @media screen and (max-width: 601px) {
+  #page2{
+    height: 100%;
+  }
+
   .card-body-container p:nth-child(2) {
     font-size: 0.7rem;
     line-height: 1rem;
@@ -1304,6 +1241,7 @@ body {
 
   #page_events {
     margin-top: 10rem;
+    height: 420%;
 
     .container {
       h2 {
@@ -1354,6 +1292,19 @@ body {
   }
 
   #navbar-content {
+    /* width: 100vw !important;
+    height: 50vh;
+    top: -60vh;
+    right: 0;
+    background-color: #296860d2;
+    flex-direction: column;
+    padding: 1rem;
+    transition-duration: .3s; */
+    display: none;
+  }
+
+  #navbar-content-phone{
+    display: flex !important;
     width: 100vw !important;
     height: 50vh;
     top: -60vh;
@@ -1362,6 +1313,7 @@ body {
     flex-direction: column;
     padding: 1rem;
     transition-duration: .3s;
+    z-index: 100;
   }
 
   #navbar {
@@ -1415,6 +1367,10 @@ body {
 }
 
 @media screen and (max-width: 440px) {
+  #page2{
+    height: 150%;
+  }
+
   #page2-part1 {
     .img2 {
       width: 300px;
@@ -1426,7 +1382,7 @@ body {
     flex-direction: column-reverse;
     margin-top: 23rem;
     position: static;
-    height: auto;
+    height: 120%;
 
     div:nth-child(1) {
       width: 100% !important;
@@ -1441,6 +1397,7 @@ body {
 
   #page_events {
     padding-top: 20rem;
+    height: 500%;
 
     .container {
       h2 {

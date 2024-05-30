@@ -101,6 +101,7 @@ navContent.forEach((el) => {
     });
   });
 });
+
 function logo_transition() {
   var t = gsap.timeline();
   var logo = document.querySelector("#navbar img");
@@ -165,16 +166,16 @@ splitTextAnimation();
 var navBtn = document.querySelector(".nav-btn");
 
 navBtn.addEventListener("click", () => {
-  
-  if(document.querySelector("#nav-btn-icon").classList.contains("ri-close-line")){
+
+  if (document.querySelector("#nav-btn-icon").classList.contains("ri-close-line")) {
     document.querySelector("#nav-btn-icon").classList.remove("ri-close-line");
     document.querySelector("#nav-btn-icon").classList.add("ri-menu-3-line");
-    document.querySelector("#navbar-content").style.top = "-60vh";
+    document.querySelector("#navbar-content-phone").style.top = "-60vh";
   }
-  else if(document.querySelector("#nav-btn-icon").classList.contains("ri-menu-3-line")){
+  else if (document.querySelector("#nav-btn-icon").classList.contains("ri-menu-3-line")) {
     document.querySelector("#nav-btn-icon").classList.remove("ri-menu-3-line");
     document.querySelector("#nav-btn-icon").classList.add("ri-close-line");
 
-    document.querySelector("#navbar-content").style.top = "0";
+    document.querySelector("#navbar-content-phone").style.top = "0";
   }
 });
