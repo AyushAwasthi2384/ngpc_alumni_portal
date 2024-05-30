@@ -51,7 +51,8 @@ body {
   display: none;
   z-index: 28;
 }
-#nav-btn-icon{
+
+#nav-btn-icon {
   z-index: 28;
   position: absolute;
 }
@@ -185,6 +186,7 @@ body {
   border-radius: 0 15px 15px 0;
   box-shadow: 1px 1px 8px 0px rgb(0, 0, 0, 0.3);
 }
+
 #notice i {
   position: absolute;
   top: 5%;
@@ -570,6 +572,31 @@ body {
   /* border: 2px solid black; */
 }
 
+#page_CTA2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.donate_text {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem
+}
+
+.donate_text h4 {
+  font-size: 4.3rem;
+  white-space: nowrap;
+  text-align: left;
+}
+
+.cta2-btn{
+  width: 11rem;
+}
+
 #footer {
   width: 100%;
   height: 80%;
@@ -807,21 +834,25 @@ body {
       box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.247);
       border-radius: 1rem;
 
-      
+
     }
-    .testi-qoute{
+
+    .testi-qoute {
       width: 3rem;
     }
-    .ttc1, .ttc2{
+
+    .ttc1,
+    .ttc2 {
       padding: 1.5rem;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
-      
-      p{
+
+      p {
         font-size: .9rem;
       }
-      .testi_name{
+
+      .testi_name {
         font-size: 1.2rem;
         font-weight: 600;
         text-align: right;
@@ -830,12 +861,13 @@ body {
   }
 }
 
-.top_alum_card{
+.top_alum_card {
   display: flex !important;
   flex-direction: row !important;
   gap: 2rem;
 }
-.ttcd1{
+
+.ttcd1 {
   width: 15rem;
   height: 100%;
   border: 1px solid black;
@@ -844,7 +876,8 @@ body {
   background-size: cover;
   background-position: center;
 }
-.ttcd2{
+
+.ttcd2 {
   width: 50%;
 }
 
@@ -859,77 +892,98 @@ body {
 .gallery_div0 {
   background-image: url(Gallery/IMG_8155.JPG);
 }
+
 .gallery_div1 {
   background-image: url(Gallery/IMG_8110.JPG);
 }
+
 .gallery_div2 {
   background-image: url(Gallery/IMG_8075.JPG);
 }
+
 .gallery_div3 {
   background-image: url(Gallery/IMG_20240323_121453.jpg);
 }
+
 .gallery_div4 {
   background-image: url(Gallery/IMG_20240323_104735.jpg);
 }
+
 .gallery_div5 {
   background-image: url(Gallery/IMG_20240323_102600.jpg);
 }
+
 .gallery_div6 {
   background-image: url(Gallery/IMG20240323135306.jpg);
 }
+
 .gallery_div7 {
   background-image: url(Gallery/IMG20240323121506.jpg);
 }
+
 .gallery_div8 {
   background-image: url(Gallery/IMG20240323120700.jpg);
 }
+
 .gallery_div9 {
   background-image: url(Gallery/IMG20240323125023.jpg);
 }
+
 .gallery_div10 {
   background-image: url(Gallery/img1.jpg);
 }
+
 .gallery_div11 {
   background-image: url(Gallery/img2.jpg);
 }
+
 .gallery_div12 {
   background-image: url(Gallery/img3.jpg);
 }
+
 .gallery_div13 {
   background-image: url(Gallery/img4.jpg);
 }
+
 .gallery_div14 {
   background-image: url(Gallery/img5.jpg);
 }
+
 .gallery_div15 {
   background-image: url(Gallery/img6.jpg);
 }
+
 .gallery_div16 {
   background-image: url(Gallery/img7.jpg);
 }
+
 .gallery_div17 {
   background-image: url(Gallery/img8.jpg);
 }
+
 .gallery_div18 {
   background-image: url(Gallery/img9.jpg);
 }
+
 .gallery_div19 {
   background-image: url(Gallery/img10.jpg);
 }
 
 
 
-.event_img2{
+.event_img2 {
   background-image: url('./Gallery/img2.jpg');
 }
-.event_img3{
+
+.event_img3 {
   background-image: url('./Gallery/img3.jpg');
 }
-.event_img4{
+
+.event_img4 {
   background-image: url('./Gallery/rangoli_comp.jpg');
 }
 
-.footer-bottom{
+.footer-bottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -964,50 +1018,54 @@ body {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-  
+
     h1 {
       text-align: center;
     }
-  
+
     .tt_container {
       width: 100%;
       display: flex;
       flex-direction: column;
       gap: 2rem;
-      
+
       .tt_card {
         width: 100%;
         height: 100%;
         padding: 1rem;
         box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.247);
         border-radius: 1rem;
-        
-        .ttcd1{
+
+        .ttcd1 {
           width: 100%;
           height: 10rem;
           border: 1px solid black;
           border-radius: 1rem;
         }
       }
-      .testi-qoute{
+
+      .testi-qoute {
         width: 3rem;
       }
-      .ttc1, .ttc2{
+
+      .ttc1,
+      .ttc2 {
         padding: 1.5rem;
         display: flex;
         justify-content: space-around;
-        
-        p{
+
+        p {
           font-size: .9rem;
         }
-        .testi_name{
+
+        .testi_name {
           font-size: 1.2rem;
           font-weight: 600;
           text-align: right;
         }
       }
     }
-    
+
   }
 }
 
@@ -1100,7 +1158,8 @@ body {
     }
   }
 
-  #cta {
+  #cta,
+  #page_CTA2 {
     width: 100% !important;
     text-wrap: wrap;
 
@@ -1132,14 +1191,15 @@ body {
     }
   }
 }
+
 @media screen and (min-width: 601px) {
-  #navbar-content-phone{
+  #navbar-content-phone {
     display: none;
   }
 }
 
 @media screen and (max-width: 601px) {
-  #page2{
+  #page2 {
     height: 100%;
   }
 
@@ -1226,7 +1286,8 @@ body {
     }
   }
 
-  #cta {
+  #cta,
+  #page_CTA2 {
     width: 100% !important;
     height: auto;
     text-wrap: wrap;
@@ -1234,6 +1295,32 @@ body {
     section h4 {
       text-wrap: wrap;
     }
+  }
+
+  #page_CTA2 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 150%;
+    margin-bottom: 3rem;
+  }
+
+  .donate_text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #qr_image img{
+    width: 100%;
+  }
+
+  .donate_text h4,
+  .donate_text p {
+    /* width: 100%; */
+    text-align: center;
+    text-wrap: wrap;
   }
 
   #googleform,
@@ -1254,7 +1341,7 @@ body {
     display: none;
   }
 
-  #navbar-content-phone{
+  #navbar-content-phone {
     display: flex !important;
     width: 100vw !important;
     height: 50vh;
@@ -1290,35 +1377,37 @@ body {
     }
   }
 
-  #top_alumni{
-    .tt_card{
+  #top_alumni {
+    .tt_card {
       display: flex !important;
       flex-direction: column !important;
-      p{
+
+      p {
         font-size: .8rem;
       }
     }
   }
-  #notice{
+
+  #notice {
     width: 80%;
     left: -80%;
     z-index: 99;
   }
 
-  .footer-bottom{
+  .footer-bottom {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
   }
 
-  .copyright-line{
+  .copyright-line {
     text-align: center;
   }
 }
 
 @media screen and (max-width: 440px) {
-  #page2{
+  #page2 {
     height: 150%;
   }
 
@@ -1393,7 +1482,8 @@ body {
     }
   }
 
-  #cta {
+  #cta,
+  #page_CTA2 {
     width: 100% !important;
     height: auto;
     text-wrap: wrap;
