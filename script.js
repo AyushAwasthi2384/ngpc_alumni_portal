@@ -47,8 +47,8 @@ noticeclose.addEventListener("click", () => {
 });
 
 gsap.to("#navbar", {
-  backgroundColor: "#FFFFF0",
-  boxShadow: "5px 0.5px 4px 0px #a5a5a5",
+  backgroundColor: "#101214",
+  boxShadow: "5px 0.5px 4px 0px #0c0c0c",
   // backdropFilter: blur(0),
   // document.getElementById("#navbar-content h1").color="white",
   scrollTrigger: {
@@ -62,7 +62,7 @@ gsap.to("#navbar", {
 });
 
 gsap.to("#page1 #navbar #navbar-content a", {
-  color: "black",
+  color: "white",
   scrollTrigger: {
     trigger: "#page1 #navbar #navbar-content a",
     scroller: "body",
@@ -74,7 +74,7 @@ gsap.to("#page1 #navbar #navbar-content a", {
 });
 
 gsap.to("#nav-btn-icon", {
-  color: "black",
+  color: "white",
   scrollTrigger: {
     trigger: "#nav-btn-icon",
     scroller: "body",
