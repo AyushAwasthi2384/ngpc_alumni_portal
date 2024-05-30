@@ -15,22 +15,40 @@
       <div id="navbar">
         <div id="logo"><img class="logo_img" src="NpgcLogo.png" alt="" /></div>
         <div id="navbar-content">
-          <span id="home">
+          <span id="home"onclick="()=>{window.location.href='#page1';}">
             <h4><a href="#page1">Home</a></h4>
           </span>
-          <span id="events">
+          <span id="events"onclick="()=>{window.location.href='#page_events;}">
             <h4><a href="#page_events">Events</a></h4>
           </span>
-          <span id="gallery">
+          <span id="gallery" onclick="()=>{window.location.href='#page_gallery';}">
             <h4><a href="#page_gallery">Gallery</a></h4>
           </span>
-          <span id="contact">
-            <h4><a>Contact</a></h4>
+          <span id="contact" onclick="()=>{window.location.href='#cta';}">
+            <h4><a href="#page_CTA">Contact</a></h4>
           </span>
         </div>
+        <!-- for mobile -->
+        <div id="navbar-content-phone">
+          <span id="home"onclick="()=>{window.location.href='#page1';}">
+            <h4><a href="#page1">Home</a></h4>
+          </span>
+          <span id="events"onclick="()=>{window.location.href='#page_events;}">
+            <h4><a href="#page_events">Events</a></h4>
+          </span>
+          <span id="gallery" onclick="()=>{window.location.href='#page_gallery';}">
+            <h4><a href="#page_gallery">Gallery</a></h4>
+          </span>
+          <span id="contact" onclick="()=>{window.location.href='#cta';}">
+            <h4><a href="#page_CTA">Contact</a></h4>
+          </span>
+        </div>
+
+
         <div class="nav-btn">
           <i id="nav-btn-icon" class="ri-menu-3-line"></i>
         </div>
+        
       </div>
       <div id="content">
         <h1>National PG College</h1>
@@ -305,7 +323,7 @@
             Attend events, mentor current students, and give back to the
             college that helped shape your future.
           </p>
-          <a class="cta-button" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSebH6q72iEXkmvO58E3gySus3c2EmA7WtKfVmkYAMFpVtlwJA/viewform?embedded=true">Join Now</a>
+          <a class="cta-button" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdD7Hpmkl9so-m5SQYDxxyyDcvHZUzdaPs3NM1BsXBWzTjVhQ/viewform">Join Now</a>
         </section>
 
         <!-- <section id="benefits">
@@ -346,7 +364,7 @@
               <h4 class="footer-widget-title">About</h4>
               <ul class="list-links">
                 <li><a href="#page3">About us</a></li>
-                <li><a href="#footer">Contact us</a></li>
+                <li><a href="#page_CTA">Contact us</a></li>
                 <li><a href="#">Privacy policy</a></li>
                 <li><a href="#">Terms &amp; Conditions</a></li>
               </ul>
