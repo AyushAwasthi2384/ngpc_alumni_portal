@@ -28,11 +28,9 @@ body {
 #page1 {
   height: 100%;
   width: 100%;
-  background-image: url("natianal_pg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   object-fit: fill;
-  overflow-x: hidden;
 }
 
 #navbar {
@@ -44,8 +42,6 @@ body {
   z-index: 25;
   position: fixed;
   width: 100vw;
-  /* border: 2px solid black; */
-  /* box-shadow: 5px 0.5px 8px 2px #a5a5a5; */
 }
 
 .nav-btn {
@@ -145,6 +141,17 @@ body {
   animation: anime 1s infinite alternate; */
 }
 
+.hero_vdo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: opacity(.8);
+  /* z-index: ; */
+}
+
 @keyframes anime {
   100% {
     text-shadow: 0 0 60px rgba(0, 4, 255, 0.475);
@@ -208,7 +215,7 @@ body {
   position: absolute;
 }
 
-.img1 {
+/* .img1 {
   width: 350px;
   height: 300px;
   left: 20%;
@@ -227,12 +234,43 @@ body {
   border-top-left-radius: 20px;
   border-top-right-radius: 5px;
   border-bottom-left-radius: 5px;
+} */
+
+.carousel {
+  /* border: 1px solid white; */
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+
+  .carImg {
+    width: 50%;
+    height: 60%;
+    object-fit: cover;
+    transition-duration: .3s;
+  }
+}
+
+#carousel_img {
+  transition: opacity 1s ease-in-out;
+  opacity: 1;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+#carousel_img.fade-out {
+  opacity: 0;
 }
 
 #page2-part2 {
   width: 45%;
-  height: 70%;
+  height: 100%;
   padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   /* border: 2px solid black; */
 }
 
@@ -739,7 +777,7 @@ body {
 
 #page_events {
   width: 100%;
-  height: 450%;
+  height: 500%;
   /* border: 2px solid black; */
   display: flex;
   align-items: center;
@@ -852,7 +890,7 @@ body {
 
 .testi_topalum {
   width: 70vw;
-  height: 105vh;
+  height: 195vh;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -887,7 +925,8 @@ body {
     .ttc2 {
       padding: 1.5rem;
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
+      gap: 2rem;
       justify-content: space-around;
 
       p {
@@ -1013,7 +1052,7 @@ body {
 
 
 .event_img1 {
-
+  background: url("./Gallery/holi_vdo.mp4");
   box-shadow: 0px 0px 100px 10px #296;
 }
 
@@ -1036,6 +1075,58 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.holi_vdo {
+  transform: rotate(90deg);
+  height: 38rem;
+  width: 30rem;
+  object-fit: cover;
+  box-shadow: 0px 0px 100px 10px #296;
+  /* border: 1px solid white; */
+  border-radius: 35px 20px 20px 35px;
+}
+
+.ev_img {
+  /* padding-left: 6.5rem;
+  padding-bottom: 18rem; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38rem;
+  height: 30rem;
+}
+
+#holi-card {
+  display: flex;
+  /* padding: 2rem; */
+  justify-content: center;
+  /* padding-left: 4rem; */
+  align-items: center;
+  /* gap: 4rem; */
+}
+
+.testi_vdo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.testi_vdo_div {
+  height: 100%;
+  width: 50%;
+}
+
+.testi_card {
+  width: 100% !important;
+}
+
+.testimonials {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem;
+  height: 100% !important;
 }
 
 
@@ -1072,11 +1163,41 @@ body {
       text-align: center;
     }
 
+    .testi_vdo {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 20px;
+    }
+
+    .testi_vdo_div {
+      height: 50%;
+      width: 100%;
+    }
+
+    .testi_card {
+      width: 100% !important;
+    }
+
+    .testimonials {
+      display: grid !important;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 5rem;
+      height: 100% !important;
+    }
+
     .tt_container {
       width: 100%;
       display: flex;
       flex-direction: column;
       gap: 2rem;
+
+      .ttcdiv2 {
+        width: 100% !important;
+        /* height: 100%; */
+        display: flex;
+        flex-direction: column;
+      }
 
       .tt_card {
         width: 100%;
@@ -1084,6 +1205,7 @@ body {
         padding: 1rem;
         box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.247);
         border-radius: 1rem;
+        flex-direction: column;
 
         .ttcd1 {
           width: 100%;
@@ -1115,6 +1237,10 @@ body {
       }
     }
 
+  }
+
+  #page_events {
+    height: 450%;
   }
 }
 
@@ -1152,9 +1278,11 @@ body {
     }
 
     #page2-part1 {
-      width: 100% !important;
-      flex-direction: column;
+      width: 100vw !important;
+      /* flex-direction: column; */
+      justify-content: flex-end;
       margin-bottom: 3rem;
+
 
       .img1 {
         display: none;
@@ -1164,6 +1292,22 @@ body {
       .img2 {
         transform: none;
       }
+    }
+
+    .carousel {
+      /* transform: translate(-50%,0); */
+      /* margin-left: 25%; */
+      width: 100%;
+    }
+
+    #carousel_img {
+      height: 15rem;
+      width: 80%;
+      margin: auto;
+      position: absolute;
+      transform: translate(-50%, 0);
+      left: 50%;
+      top: 110vh;
     }
 
     #page2-part2 {
@@ -1185,7 +1329,7 @@ body {
 
   #page_events {
     padding-top: 0rem;
-    /* height: 500%; */
+    /* height: 900%; */
 
     .container {
       h2 {
@@ -1317,7 +1461,7 @@ body {
 
   #page_events {
     margin-top: 10rem;
-    height: 420%;
+    height: 520%;
 
     .container {
       h2 {
@@ -1426,6 +1570,30 @@ body {
     }
   }
 
+  .testi_vdo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+
+  .testi_vdo_div {
+    height: 50%;
+    width: 100%;
+  }
+
+  .testi_card {
+    width: 100% !important;
+    height: 40rem !important;
+  }
+
+  .testimonials {
+    display: grid !important;
+    grid-template-columns: repeat(1, 1fr) !important;
+    gap: 5rem;
+    height: 100% !important;
+  }
+
   #top_alumni {
     .tt_card {
       display: flex !important;
@@ -1452,6 +1620,28 @@ body {
 
   .copyright-line {
     text-align: center;
+  }
+
+  .holi_vdo {
+    height: 25rem;
+    width: 15rem;
+  }
+
+  #holi-card {
+    padding-left: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0rem;
+  }
+
+  .ev_img {
+    width: 100%;
+    height: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
   }
 }
 
