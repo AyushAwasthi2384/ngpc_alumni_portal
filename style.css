@@ -1426,6 +1426,9 @@ body {
 @media screen and (max-width: 601px) {
   #page2 {
     height: 70%;
+    padding-top: 5rem;
+    justify-content: center;
+    align-items: center;
   }
 
   .card-body-container p:nth-child(2) {
@@ -1708,7 +1711,7 @@ body {
 
   #page_events {
     /* padding-top: 20rem; */
-    height: 560%;
+    height: 360%;
 
     .container {
       h2 {
