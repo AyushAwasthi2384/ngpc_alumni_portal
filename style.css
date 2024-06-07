@@ -1093,6 +1093,7 @@ body {
   height: 110vh;
   margin: auto;
   overflow: hidden;
+  margin-bottom: 3rem;
 }
 
 .carousel {
