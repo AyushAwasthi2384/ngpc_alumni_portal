@@ -180,46 +180,6 @@ navBtn.addEventListener("click", () => {
   }
 });
 
-const car_images = [
-  "./holi_of_flowers1.jpg",
-  "./Gallery/IMG_8075.JPG",
-  "./Gallery/img2.jpg",
-  "./Gallery/img1.jpg"
-]
-
-// function car_change(){
-// let img = document.getElementById("carousel_img");
-// window.addEventListener('load', ()=>{
-//   let c=0;
-//   while(c<car_images.length{
-//     img.src = `${car_images[c]}`;
-//     setInterval(()=>{c=1}, 1000)
-
-//   })
-// })
-// }
-
-// car_change();
-
-// document.addEventListener('DOMContentLoaded', function () {
-//   var image = document.getElementById('carousel_img');
-//   var images = [
-//     "./holi_of_flowers1.jpg",
-//     "./Gallery/IMG_8075.JPG",
-//     "./Gallery/img2.jpg",
-//     "./Gallery/img1.jpg"
-//   ];
-//   var currentIndex = 0;
-
-//   function changeImage() {
-//     currentIndex = (currentIndex + 1) % images.length;
-//     image.src = images[currentIndex];
-//   }
-
-//   // Change image every 3 seconds (3000 milliseconds)
-//   setInterval(changeImage, 3000);
-// });
-
 
 document.addEventListener('DOMContentLoaded', function () {
   var image = document.getElementById('carousel_img');
@@ -246,3 +206,25 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 vdo = document.getElementById('cont_vdo')
+
+
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  let currentIndex = 0;
+  const items = document.querySelectorAll('.carousel-item');
+  const totalItems = items.length;
+
+  function showNextSlide() {
+      items[currentIndex].classList.remove('active');
+      currentIndex = (currentIndex + 1) % totalItems;
+      items[currentIndex].classList.add('active');
+      document.querySelector('.carousel').style.transform = `translateX(-${currentIndex * 100}%)`;
+  }
+
+  setInterval(showNextSlide, 3000);
+});
