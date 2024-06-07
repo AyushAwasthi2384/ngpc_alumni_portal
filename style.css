@@ -1284,6 +1284,10 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  .heroCarousel{
+    margin-bottom: 6rem !important;
+  }
+
   .card-body-container p:nth-child(2) {
     font-size: 0.7rem;
     line-height: 1rem;
@@ -1496,7 +1500,7 @@ body {
 
   #page_events {
     /* margin-top: 10rem; */
-    height: 460%;
+    height: 500%;
 
     .container {
       h2 {
@@ -1714,7 +1718,7 @@ body {
 
   #page_events {
     /* padding-top: 20rem; */
-    height: 460%;
+    height: 500%;
 
     .container {
       h2 {
