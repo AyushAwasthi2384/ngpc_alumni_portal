@@ -1682,7 +1682,10 @@ body {
 
 @media screen and (max-width: 440px) {
   #page2 {
-    height: 150%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
   }
 
   #page2-part1 {
@@ -1711,7 +1714,7 @@ body {
 
   #page_events {
     /* padding-top: 20rem; */
-    height: 360%;
+    height: 460%;
 
     .container {
       h2 {
