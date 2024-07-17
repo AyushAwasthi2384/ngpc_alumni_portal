@@ -4,7 +4,7 @@ Welcome to the NPGC Alumni Portal! This repository contains the source code for 
 
 ## Features
 
-- Alumni registration system
+- Alumni registration system 
 - Alumni directory for networking
 - Latest news and events updates
 - Information about the college and its facilities
